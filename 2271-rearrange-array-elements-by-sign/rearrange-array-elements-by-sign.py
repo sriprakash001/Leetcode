@@ -8,7 +8,7 @@ class Solution:
             if i > 0:
                 ans[l] = i
                 l += 2
-            if i < 0:
+            elif i < 0:
                 ans[r] = i
                 r += 2
         return ans
