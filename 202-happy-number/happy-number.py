@@ -5,7 +5,7 @@ class Solution:
         while n != 1:
             s = 0
             for i in str(n):
-                s += int(i) ** 2
+                s += int(i) *int(i)
             if s not in l:
                 l.append(s)
             else:
