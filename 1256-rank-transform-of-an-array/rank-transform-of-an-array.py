@@ -1,12 +1,11 @@
 class Solution:
     def arrayRankTransform(self, arr: List[int]) -> List[int]:
-        arr1 = sorted(arr)
-        dic = {}
-        val = 1
-        for i in arr1:
-            if i in dic:
-                continue
-            else:
-                dic[i] = val
-                val += 1
-        return [dic[i] for i in arr]
+        a = sorted(set(arr))
+        d = {}
+        rank = 1
+        for i in a:
+            d[i] = rank
+            rank +=1
+        return [ d[i] for i in arr]
+
+        
