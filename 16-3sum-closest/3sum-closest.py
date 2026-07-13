@@ -17,6 +17,6 @@ class Solution:
                     left += 1
                 elif currsum > target:
                     right -= 1
-                else:
+                elif currsum == target:
                     return currsum
         return closest
