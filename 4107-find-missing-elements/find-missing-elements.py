@@ -3,6 +3,6 @@ class Solution:
         nums1 = set(nums)
         ans = []
         for i in range(min(nums),max(nums)+1):
-            if i not in nums1:
+            if i not in nums:
                 ans.append(i)
         return ans
