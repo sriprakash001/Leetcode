@@ -7,8 +7,8 @@ class Solution:
         # for i in dic.values():
         #     if i > max_:
         #         max_ = i
-        for i in dic.values():
-            if i == max_:
-                count += max_
+        for i in nums:
+            if dic[i] == max_:
+                count += 1
         return count
         
